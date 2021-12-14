@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap');
+
+@colorBack : #00CC99;
+
+body{
+    background-color: @colorBack;
+}
+
+//Propiedades css agrupadas en less
+
+.button-creator(@color){
+    background-color: @color;
+    box-shadow: 0px 3px 0px darken(@color, 7%); //darken crear un color más oscuro, rollo mate
+
+    &:active{
+        box-shadow: 0px 1px 0px darken(@color, 7%);
+        position: relative;
+        top: 2px;
+    }
+}
+
+.btn{
+    font-family: 'Readex Pro', sans-serif;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    color: #fafafa;
+
+    &.btn-mal {
+        .button-creator(#17805B);
+    }
+
+    &.btn-increible{
+        .button-creator(#5a5a5a);
+    }
+
+    &.btn-bien{
+        .button-creator(#6A598D);
+    }
+}
+
+.flex
+{
+    flex-direction: row;
+    columns: 1;
+    display: inline-block;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+

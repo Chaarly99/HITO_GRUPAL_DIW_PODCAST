@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Readex Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/readexpro/v5/SLXYc1bJ7HE5YDoGPuzj_dh8na74KiwZQQwBm7w3.ttf) format('truetype');
+}
+body {
+  background-color: #00CC99;
+}
+.btn {
+  font-family: 'Readex Pro', sans-serif;
+  text-transform: uppercase;
+  padding: 10px;
+  border: none;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  color: #fafafa;
+}
+.btn.btn-mal {
+  background-color: #17805B;
+  box-shadow: 0px 3px 0px #126245;
+}
+.btn.btn-mal:active {
+  box-shadow: 0px 1px 0px #126245;
+  position: relative;
+  top: 2px;
+}
+.btn.btn-increible {
+  background-color: #5a5a5a;
+  box-shadow: 0px 3px 0px #484848;
+}
+.btn.btn-increible:active {
+  box-shadow: 0px 1px 0px #484848;
+  position: relative;
+  top: 2px;
+}
+.btn.btn-bien {
+  background-color: #6A598D;
+  box-shadow: 0px 3px 0px #5a4b77;
+}
+.btn.btn-bien:active {
+  box-shadow: 0px 1px 0px #5a4b77;
+  position: relative;
+  top: 2px;
+}
+.flex {
+  flex-direction: row;
+  columns: 1;
+  display: inline-block;
+}
+img {
+  width: 200px;
+  height: 200px;
+}
